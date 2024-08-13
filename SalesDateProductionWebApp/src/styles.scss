@@ -1,0 +1,44 @@
+:root {
+  --success-color: #4caf50;
+}
+
+.end {
+  display: flex;
+  justify-content: flex-end !important;
+  width: 100%;
+}
+
+.titleModal {
+  background: var(--mat-stepper-header-error-state-label-text-color);
+  color: #ffffff !important;
+}
+
+.titleModalSuccess {
+  background: var(--success-color);
+  color: #ffffff !important;
+}
+
+.success-button {
+  background-color: white; /* Verde éxito */
+  color: var(--success-color) !important; /* Texto blanco */
+}
+
+.success-button:hover {
+  background-color: white;
+  color: var(--success-color);/* Un poco más oscuro al hacer hover */
+}
+
+
+.w-95 {
+  width: 95%;
+}
+.w-100 {
+  width: 100%;
+}
+
+.between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
