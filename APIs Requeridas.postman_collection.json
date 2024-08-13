@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "4af7cbbc-9a60-4d7f-839b-0126f5afb23c",
+		"name": "APIs Requeridas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10259482"
+	},
+	"item": [
+		{
+			"name": "Customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44315/customer/next-order-date",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44315",
+					"path": [
+						"customer",
+						"next-order-date"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customers Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://01cf-181-53-13-239.ngrok-free.app/customer/next-order-date",
+					"protocol": "https",
+					"host": [
+						"01cf-181-53-13-239",
+						"ngrok-free",
+						"app"
+					],
+					"path": [
+						"customer",
+						"next-order-date"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44315/order/all-order/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44315",
+					"path": [
+						"order",
+						"all-order",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44315/Employee/get-all-employees",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44315",
+					"path": [
+						"Employee",
+						"get-all-employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Shippers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44315/shipper/get-all-shippers",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44315",
+					"path": [
+						"shipper",
+						"get-all-shippers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44315/product/get-all-products",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44315",
+					"path": [
+						"product",
+						"get-all-products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Order with Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"CreateOrderInput\": {\r\n    \"EmpId\": 1,\r\n    \"ShipperId\": 2,\r\n    \"ShipName\": \"Test Ship\",\r\n    \"ShipAddress\": \"1234 Test St\",\r\n    \"ShipCity\": \"Test City\",\r\n    \"OrderDate\": \"2024-01-01\",\r\n    \"RequiredDate\": \"2024-01-15\",\r\n    \"ShippedDate\": null,\r\n    \"Freight\": 15.5,\r\n    \"ShipCountry\": \"USA\"\r\n  },\r\n  \"OrderDetailInput\": {\r\n    \"ProductId\": 2,\r\n    \"UnitPrice\": 19.99,\r\n    \"Qty\": 10,\r\n    \"Discount\": 0.1\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44315/order/create-order-with-detail",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44315",
+					"path": [
+						"order",
+						"create-order-with-detail"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

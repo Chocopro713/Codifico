@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+#chart {
+    margin-top: 20px;
+}
+
+.bar {
+    stroke: #000;
+    stroke-width: 1px;
+}
